@@ -8,11 +8,11 @@ else:
     age = 2025 - year
 
 if day > 28: # check if the birthday has passed this month
-    age_months = age * 12 + (month) 
+    age_months = age * 12 + (month-9) 
 else:
-    age_months = age * 12 + (month - 1)
+    age_months = age * 12 + (month - 10)
 
-age_days = age * 365 + (month - 1) * 30 + day 
+age_days = age * 365 + (month - 10) * 30 + day 
 
 
 print(f"You are {age} years old.")
