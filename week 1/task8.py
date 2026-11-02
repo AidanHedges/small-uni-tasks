@@ -14,12 +14,13 @@ if day > 28: # check if the birthday has passed this month
 else:
     age_months = age * 12 + (current_month - 10)
 
-age_days = age * 365 + (month - 10) * 30 + day 
+age_days = age * 365 + (month - current_month) * 30 + day 
 
 
 print(f"You are {age} years old.")
 print(f"You are approximately {age_months} months old.")
 print(f"You are approximately {age_days} days old. (excluding leap years)")
 print(f"You were born on {year}-{month:02d}-{day:02d}.")
+
 
 
